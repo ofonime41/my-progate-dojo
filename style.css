@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Avenir Next";
+
+}
+a{text-decoration: none; color: #fff;}
+li {
+  list-style: none;
+}
+
+.flex{display: flex; flex-wrap: wrap; justify-content: center;}
+.nav{
+  background-color:#26d0c9;
+  color:#fff;
+  height:90px;
+}
+.nav h1{
+  padding:20px 40px;
+  float:left;
+}
+
+
+.nav ul li{
+  display:inline-block;
+  padding:33px 20px;
+}
+.container{
+    margin:100px 80px;
+}
+
+
+.heading h1{
+ font-size:120px;
+}
+.heading h1 span{
+ color:#ff4a4a;
+}
+
+.heading p{
+font-size:60px;
+}
+
+/*LESSON SECTION*/
+
+.lesson h3{
+ font-size:28px;
+ margin-bottom:15px;
+ border-bottom:2px solid #dee7ec;
+ padding-bottom: 15px;
+ 
+}
+.lesson div{
+  flex: 25%;
+}
+
+.lesson img{
+  padding-top:50px;
+
+}
+.lesson p{
+  padding-top:15px;
+   font-size:24px;
+   text-align: center;
+}
+
+
+/*CONTACT*/
+.contact h3{
+  border-bottom:2px solid #dee7ec;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+.contact p{
+ /*margin-bottom:10px;*/
+ font-size:18px;
+}
+
+
+input, textarea{
+  width:400px;
+  font-size:18px;
+  padding:20px;
+  margin-top:10px;
+  margin-bottom:30px;
+  border:1px solid #dee7ec;
+}
+
+.send-btn{
+  background-color:#dee7ec;
+  color:#889eab;
+}
+
+
+/*MEDIA QUERY*/
+
+
+@media screen and (max-width: 1200px){
+.heading h1{
+ font-size:100px;
+}
+.heading p{
+ font-size:60px;
+}
+
+.lesson div{
+ flex: 20%;
+ text-align: center;
+}
+
+
+}
+
+
+@media screen and (max-width: 1025px){
+
+  .lesson div{
+   flex: 50%;
+   text-align: center;
+}
+.heading h1{
+ font-size:80px;
+}
+.heading p{
+ font-size:40px;
+}
+.contact{text-align: center;}
+.contact h3{text-align: left;}
+}
+
+
+
+@media screen and (max-width: 768px){
+  .lesson div{
+  flex: 100%;
+    text-align: center;
+  }
+
+  .heading h1{
+ font-size:80px;
+  text-align: center;
+}
+.heading p{
+ font-size:40px;
+  text-align: center;
+}
+
+}
