@@ -53,17 +53,33 @@
   <!--   <div class="clear-fix"></div> -->
     
     <div class ="contact container">
+      <h1 id="alert"></h1>
       <h3>Contact Us</h3>
+      <form id="contactForm">
+        <p>Email (Required)</p>
+        <input type="email" name="" id="email" value="" required />
 
-          <p>Email (Required)</p>
-          <input type="text" name="" id="" value="" />
-
-          <p>Message (Required)</p>
-          <textarea></textarea>
-        
-         <p>*Required must be filled</p>
-         <input class ="send-btn" type="submit" name="" id="" value="Send" />
-
+        <p>Message (Required)</p>
+        <textarea required id="textarea"></textarea>
+          
+        <p style="color:red;">*Required must be filled</p>
+        <button class ="send-btn" id="sendBtn" >Send</button>
+      </form>
+      
+          
     </div>
+
+     <footer>
+      <h1>Progate</h1>
+      
+      <ul>
+        <li>About</li>
+         <li>Jobs</li>
+          <li>Contact Us</li>
+      </ul>
+      
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
